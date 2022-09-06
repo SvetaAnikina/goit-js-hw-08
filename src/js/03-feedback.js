@@ -24,7 +24,7 @@ function onSubmitButtonClicK(event) {
 
 function checkStorage() {
     const savedData = localStorage.getItem('feedback-form-state')
-    parsedData = JSON.parse(savedData)
+    const parsedData = JSON.parse(savedData)
  
   if (savedData) {
       mailEl.value = parsedData.email;
